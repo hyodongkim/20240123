@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>게시글들</title>
+    </head>
+    <body>
+        <ol>
+        <% for(let i = 0; i < boardlist.length; i += 1){ %>
+            <li>
+                <span><%=boardlist[i].id%></span>
+                <span><%=boardlist[i].content%></span>
+            </li>
+        <%}%>
+        </ol>
+    </body>
+</html>
